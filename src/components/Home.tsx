@@ -10,12 +10,11 @@ const Home: React.FC = () => {
 
   const getAllPokemons = async () => {
     let pokes: [] = []
-    if(JSON.parse(localStorage.getItem('pokemons_data') || '') === null){
+    if(JSON.parse(localStorage.getItem('pokemons_data')!) === null){
       pokes = await getDataPokemons()
       setPokemons(pokes)
     } else {
-      pokes = JSON.parse(localStorage.getItem('pokemons_data') || '')
-      console.log(pokes)    
+      pokes = JSON.parse(localStorage.getItem('pokemons_data')!)
       setPokemons(pokes)      
     }
   }

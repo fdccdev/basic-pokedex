@@ -36,32 +36,34 @@ const Detail = () => {
           </h4>
         </div>
         <hr />
-        <div className={styles.infoStats}>          
+        <div className={styles.infoStats}>
           <table>
-            <tr>
-              <td>HP:</td>
-              <td>{pkmn?.hp}</td>
-            </tr>
-            <tr>
-              <td>Atk:</td>
-              <td>{pkmn?.atk}</td>
-            </tr>
-            <tr>
-              <td>Def:</td>
-              <td>{pkmn?.def}</td>
-            </tr>
-            <tr>
-              <td>Sp.Atk:</td>
-              <td>{pkmn?.spatk}</td>
-            </tr>
-            <tr>
-              <td>Sp.Def:</td>
-              <td>{pkmn?.spdef}</td>
-            </tr>
-            <tr>
-              <td>Speed:</td>
-              <td>{pkmn?.speed}</td>
-            </tr>
+            <tbody>
+              <tr>
+                <td>HP:</td>
+                <td>{pkmn?.hp}</td>
+              </tr>
+              <tr>
+                <td>Atk:</td>
+                <td>{pkmn?.atk}</td>
+              </tr>
+              <tr>
+                <td>Def:</td>
+                <td>{pkmn?.def}</td>
+              </tr>
+              <tr>
+                <td>Sp.Atk:</td>
+                <td>{pkmn?.spatk}</td>
+              </tr>
+              <tr>
+                <td>Sp.Def:</td>
+                <td>{pkmn?.spdef}</td>
+              </tr>
+              <tr>
+                <td>Speed:</td>
+                <td>{pkmn?.speed}</td>
+              </tr>
+            </tbody>
           </table>
         </div>
       </div>
