@@ -36,13 +36,7 @@ const Detail = () => {
           </h4>
         </div>
         <hr />
-        <div className={styles.infoStats}>
-          {/* <span>HP: {pkmn?.hp}</span>
-          <span>Atk: {pkmn?.atk}</span>
-          <span>Def: {pkmn?.def}</span>
-          <span>Sp.Atk: {pkmn?.spatk}</span>
-          <span>Sp.Def: {pkmn?.spdef}</span>
-          <span>Speed: {pkmn?.speed}</span> */}
+        <div className={styles.infoStats}>          
           <table>
             <tr>
               <td>HP:</td>

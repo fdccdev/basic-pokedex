@@ -23,6 +23,6 @@ export async function getDataPokemons() {
     img: `https://img.pokemondb.net/sprites/sword-shield/icon/${formatNamePk(pokemon.name.english).toLowerCase()}.png`
   }))
 
-  window.localStorage.setItem('pokemons_data', JSON.stringify(pokemons));
+  localStorage.setItem('pokemons_data', JSON.stringify(pokemons));
   return pokemons
 }
