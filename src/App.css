@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #fafafa;
+}
+
+body {
+  font-family: system-ui;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
