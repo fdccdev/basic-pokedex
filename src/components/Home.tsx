@@ -2,11 +2,13 @@ import { useEffect, useState } from 'react'
 import { Header } from './ui/Header'
 import { Main } from './ui/Main'
 import { getDataPokemons } from '../services/fetchData'
+import { Pokemon } from '../types/types'
+
 
 const Home: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true)
-  const [pokemons, setPokemons] = useState([])
-  const [query, setQuery] = useState('')
+  const [pokemons, setPokemons] = useState<Array<Pokemon>>([])
+  const [query, setQuery] = useState<string>('')
 
   const getAllPokemons = async () => {
     let pokes: [] = []

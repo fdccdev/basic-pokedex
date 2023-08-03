@@ -9,7 +9,7 @@ export const Header: React.FC<Props> = ({ setQuery }) => {
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault()
   }
-
+  
   return (
     <header className={styles.header}>
       <form onSubmit={handleSubmit}>
@@ -18,7 +18,7 @@ export const Header: React.FC<Props> = ({ setQuery }) => {
           type="text"
           placeholder="Search a Pokemon... Charizard"
           onChange={(evt) => {
-            setQuery(evt.target.value)
+            setQuery(evt.target.value.toLowerCase())
           }}
         />
       </form>

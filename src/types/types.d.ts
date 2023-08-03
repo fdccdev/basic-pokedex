@@ -3,6 +3,10 @@ export interface Props {
     query: string
 }
 
+export interface PkArray {
+    pokemos: Pokemon[]
+}
+
 export type Pokemon = {
     id: string,
     name: string,
