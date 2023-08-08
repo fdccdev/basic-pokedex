@@ -67,3 +67,9 @@ tr td:first-child {
   text-align: right;
   font-weight: 600;
 }
+
+@media(max-width: 650px){
+  .container {
+    width: 90%;
+  }
+}

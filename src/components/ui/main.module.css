@@ -32,3 +32,14 @@
 .imgPkmn{
     width: 50%;
 }
+
+@media(max-width: 650px){
+    .listItem {
+        width: 100%;
+        height: auto;
+    }
+
+    .imgPkmn{
+        width: 30%;
+    }
+}

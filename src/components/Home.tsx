@@ -7,7 +7,7 @@ import { Pokemon } from '../types/types'
 
 const Home: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true)
-  const [pokemons, setPokemons] = useState<Array<Pokemon>>([])
+  const [pokemons, setPokemons] = useState<Pokemon[]>([])
   const [query, setQuery] = useState<string>('')
 
   const getAllPokemons = async () => {
